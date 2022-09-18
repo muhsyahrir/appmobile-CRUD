@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Edit Data"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Data Mahasiswa"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="#000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="10dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_credit_card_black_24dp"/>
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/ETNim"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="NIM"
+                app:met_floatingLabel="normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="10dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_person_black_24dp"/>
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/ETName"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                app:met_floatingLabel="normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="10dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_add_location_black_24dp"/>
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/ETAddress"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                app:met_floatingLabel="normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="10dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_play_arrow_black_24dp"/>
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/ETHobby"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Hobby"
+                app:met_floatingLabel="normal"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/BTNUpdate"
+            android:layout_marginTop="20dp"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:drawableStart="@drawable/ic_present_to_all_black_24dp"
+            android:text="Update"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</LinearLayout>
